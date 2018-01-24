@@ -3,6 +3,35 @@ Build your first OWC web-component
 
 # Overview
 This short tutorial shows how to build components for OWC platform. You will create a simple OWC element integrating it in OWC web application.
+The technology involved are multiple.
+
+**Polymer**
+
+Polymer is an open-source library for creating web applications using web components, following Material Design principles. Polymer library is designed to make it easier and faster for developers to create great, reusable components for the modern web. Polymer is built on top of the web components standards and it helps developers in building their own custom elements.
+
+Polymer library provides a declarative syntax that makes it simpler to define custom elements. It adds features like templating, two-way data binding and property observation to help building powerful, reusable elements with less code.
+
+More information about Polymer library can be found at: https://www.polymer-project.org/1.0/docs/start/what-is-polymer.html
+
+**Bower**
+
+bower is package manager of web (html/css/js) dependencies for client side (browser). It simplifies developers' job downloading and managing all external libraries used by a web application. It's enough to include in your application a file, called bower.json, with the list of dependencies and the version to use.
+Node.js
+
+Node.js is is an open-source, cross-platform JavaScript runtime environment for developing tools and application. Node.js javascript interpreter is Google's V8. In the context of OWC, Node.js is required as Bower dependency.
+**Npm (Node Package Manager)**
+
+npm is the Node.js package manager, automatically included when Node.js is installed. npm manages installation of packages that are local dependencies of a particular project, resolving also, in one command, all the dependencies of a project.
+Gulp
+
+**Gulp**
+helps automation of time-consuming tasks in development workflow. It is a Node.js task manager used mainly for: - Minification and concatenation of Javascript and CSS files - CSS and Javascript preprocessing and validation - Image optimization - Unit testing
+
+The philosophy of gulp is code over configurations
+
+**OData** 
+
+OData (Open Data Protocol) is a standard that defines a set of best practices for building and consuming RESTful APIs. OData RESTful APIs are easy to consume. The OData metadata, a machine-readable description of the data model of the APIs, enables the creation of powerful generic client proxies and tools.
 
 # Get set up
 Before to create and develop a new component, we will setup the development environment. This guide is for linux users, future cross-OS enviroments will be provided using docker. OWC is a web project based on javascript tools. npm is a task manager for nodejs modules and bower is the dependency manager for web projects.
