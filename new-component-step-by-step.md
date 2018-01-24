@@ -284,6 +284,68 @@ The local server will be run and the default browser will be opened loading the 
 
 The last step is to write down the implementation code of your new component. Many open source examples are present on the web, for the sake of completeness we advice to read some code from official Polymer community compoments [https://github.com/PolymerElements](https://github.com/PolymerElements).
 
+We try now to create a *hello world* new component from scratch with a button with label "GO" that shows an alert with messsage "Hello OWC".
+Presuming the development environment ready, the developer has to follow these simple steps:
+
+
+**1) Enter in the *frontend* folder**
+
+```
+cd src/main/frontend/
+```
+**2) Identify the absolute path of project folder:**
+
+```
+pwd
+```
+(e.g. output: ```/home/rbua/Downloads/dhus-owc-master/src/main/frontend```).
+
+
+**3) Run the script to create a new component:**
+
+```
+python tools/new_component.py create
+```
+
+**4) Reply to answer of script (summarised ):**
+
+```
+rbua@makemake:~/Downloads/dhus-owc-master/src/main/frontend$ python tools/new_component.py create
+create
+Repository path (empty to load the path from configuration file): /home/rbua/Downloads/dhus-owc-master/src/main/frontend
+Repository url (empty to load the path from configuration file): http://example.it
+New element name: hello-owc
+New element class: HelloOWC
+New element description: This is the description of the hello owc component
+Template path: /home/rbua/Downloads/dhus-owc-master/src/main/frontend/app/elements/_template-element, new component path: /home/rbua/Downloads/dhus-owc-master/src/main/frontend/app/elements/hello-owc
+setting demo...
+setting test...
+setting README...
+setting bower.json...
+setting wct files...
+setting element file
+[DONE]
+```
+
+**5) Check if the component was created by the script:**
+
+```
+ls app/elements | grep hello-owc
+```
+If the output of command is ```hello-owc```, the component was created.
+
+**6) Include the new component in OWC application:**
+
+Open the ```elements.html``` file with your preferred text-editor:
+```
+vim app/elements/elements.html
+
+```
+
+<link rel="import" href="hello-owc/hello-owc.html">
+
+
+
 
 # Summary
 OWC is based on the most modern web technologies. The developer interested to create a new component has to setup the development environment, to run the creator script and to develop the code following the javascript best practices.
