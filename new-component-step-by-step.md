@@ -336,15 +336,54 @@ If the output of command is ```hello-owc```, the component was created.
 
 **6) Include the new component in OWC application:**
 
-Open the ```elements.html``` file with your preferred text-editor:
-```
-vim app/elements/elements.html
+Concat to the ```elements.html``` file the import tag of our new component with name *hello-owc*:
 
 ```
+echo '<link rel="import" href="hello-owc/hello-owc.html">' >>  app/elements/elements.html
+```
 
-<link rel="import" href="hello-owc/hello-owc.html">
+**7) Write down the code:**
+Open the component file code with your preferred text-editor:
+
+```
+vim app/elements/hello-owc/hello-owc.html
+```
+Add the ```<template>``` tag after the ```<dom-module id="hello-owc">``` node, with the view code:
+```
+<template>
+ <button on-click="goHandler">GO<button>
+<template>
+```
+
+Add the go event handler in the *Controller* after the method  *beforeRegister()*:
+```
+  /**
+   * Example of method for OWC component.
+   *
+   * @return {null}
+   */
+  goHandler(){
+       alert("Hello OWC");
+  }
+```
+And save the modifies.
 
 
+**8) Push the component in the navigation system:**
+To test our component we will modify the application to push the hello-owc component in the navigation system.
+Open the file ```owc-app.html```
+
+```
+vim app/elements/owc-app/owc-app.html
+```
+
+In the ```_init()``` method replace the line ```var helloOwc = document.createElement('dynamic-main-menu');``` with ```var dynamicMenu = document.createElement('hello-owc');``` and the line ```self.navigationManager.pushComponent(dynamicMenu, "150px", (self.theme.title) ? self.theme.title : '', true, true, 1);``` with the line ``` self.navigationManager.pushComponent(helloOwc, "150px", "Hello OWC", true, true, 1); ```
+
+**9) Run the application:**
+
+```
+gulp serve:dist
+```
 
 
 # Summary
