@@ -24,12 +24,14 @@ Node.js is is an open-source, cross-platform JavaScript runtime environment for 
 npm is the Node.js package manager, automatically included when Node.js is installed. npm manages installation of packages that are local dependencies of a particular project, resolving also, in one command, all the dependencies of a project.
 Gulp
 
+
+
 **Gulp**
 helps automation of time-consuming tasks in development workflow. It is a Node.js task manager used mainly for: - Minification and concatenation of Javascript and CSS files - CSS and Javascript preprocessing and validation - Image optimization - Unit testing
 
 The philosophy of gulp is code over configurations
 
-**OData** 
+**OData**
 
 OData (Open Data Protocol) is a standard that defines a set of best practices for building and consuming RESTful APIs. OData RESTful APIs are easy to consume. The OData metadata, a machine-readable description of the data model of the APIs, enables the creation of powerful generic client proxies and tools.
 
