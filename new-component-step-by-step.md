@@ -155,6 +155,8 @@ In our component the *View*  code is present in the ```<template>``` node.
 
 The bound data represents the component *Model*.
 
+In our component the *Model* is represented by the
+
 **CONTROLLER**  
 
 The controller contains the business logic of component. The main goal of the *Controller* is to create the binding of the *Model* with the *View*, to provide the model from the *datasources* and to manage the behaviour of model. It represents the logic-layer between the user and the datasources.
@@ -267,8 +269,21 @@ http://localhost:8081/elements/new-component/
 ```
 # Launch application
 
+Gulp tasks to compile and launch the web application are provided in the package.
+Run this command in the ```frontend``` folder:
+
+```
+gulp serve:dist
+```
+
+The local server will be run and the default browser will be opened loading the client page.
+
 
 
 # Enjoy coding
 
+The last step is to write down the implementation code of your new component. Many open source examples are present on the web, for the sake of completeness we advice to read some code from official Polymer community compoments [https://github.com/PolymerElements](https://github.com/PolymerElements).
+
+
 # Summary
+OWC is based on the most modern web technologies. The developer interested to create a new component has to setup the development environment, to run the creator script and to develop the code following the javascript best practices.
