@@ -169,67 +169,6 @@ The controller contains the business logic of component. The main goal of the *C
 
 
 
-# Create a new component
-The OWC provides a python script to create a new component from scratch with the structure of the OWC component:
-
-during command execution, please insert the requested information:
-```
-Repository path (empty to load the path from configuration file):
-
-Insert the path of the owc source folder (e.g. /client/owc-client/src/main/frontend/) and then press enter.
-
-Repository url (empty to load the path from configuration file):
-
-Insert the git repository url for this component (e.g. https: //github.com//DataHubSystem.git), or leave field empty if there isn't a repository, then press enter.
-
-New element name:
-
-Insert the name of the new component. It must be composed with two words separated by '-' character (e.g. new-component), then press enter.
-
-New element class:
-
-Insert the name of the ES6 class that will contain the code of the new Polymer component (e.g. NewComponent), then press enter.
-
-New element description:
-
-Insert a description of the new component, then press enter.
-
-script output will be similar to snippet below:
-
-Template path: /data/owc-project/app/elements/_template-element, new component path: /data/owc-project/app/elements/new-component
-setting demo...
-setting test...
-setting README...
-setting bower.json...
-setting wct files...
-setting element file
-[DONE]
-```
-
-
-
-# Integrate in OWC
-
-After creating a new component, it is necessary to integrate it into OWC to make it visible to all the other components of the application. To do this, it is enough to insert the reference link to the component in elements.html file located in the folder /client/owc-client/src/main/app/elements.
-
-Some examples of components import are reported below:
-```
-<link rel="import" href="navigation-manager/navigation-manager.html">
-<link rel="import" href="http-manager/http-manager.html">
-<link rel="import" href="authentication-manager/authentication-manager.html">
-```
-
-# Launch application
-
-Gulp tasks to compile and launch the web application are provided in the package.
-Run this command in the ```frontend``` folder:
-
-```
-gulp serve:dist
-```
-
-The local server will be run and the default browser will be opened loading the client page.
-
 
 
 # Enjoy coding
