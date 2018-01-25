@@ -18,7 +18,10 @@ More information about Polymer library can be found at: https://www.polymer-proj
 bower is package manager of web (html/css/js) dependencies for client side (browser). It simplifies developers' job downloading and managing all external libraries used by a web application. It's enough to include in your application a file, called bower.json, with the list of dependencies and the version to use.
 Node.js
 
+**Node**
+
 Node.js is is an open-source, cross-platform JavaScript runtime environment for developing tools and application. Node.js javascript interpreter is Google's V8. In the context of OWC, Node.js is required as Bower dependency.
+
 **Npm (Node Package Manager)**
 
 npm is the Node.js package manager, automatically included when Node.js is installed. npm manages installation of packages that are local dependencies of a particular project, resolving also, in one command, all the dependencies of a project.
@@ -27,9 +30,10 @@ Gulp
 
 
 **Gulp**
-helps automation of time-consuming tasks in development workflow. It is a Node.js task manager used mainly for: - Minification and concatenation of Javascript and CSS files - CSS and Javascript preprocessing and validation - Image optimization - Unit testing
 
-The philosophy of gulp is code over configurations
+Gulp helps automation of time-consuming tasks in development workflow. It is a Node.js task manager used mainly for: - Minification and concatenation of Javascript and CSS files - CSS and Javascript preprocessing and validation - Image optimization - Unit testing
+
+The philosophy of gulp is code over configurations.
 
 **OData**
 
@@ -103,7 +107,7 @@ bower install
 
 *OWC* is a front-end client of *DHuS*. In development environment here exposed, we have to connect the *OWC* client with a running DHuS instance.
 
-How to launch a *DHuS*  application please refer to the online guide (https://github.com/SentinelDataHub/DataHubSystem/wiki/Smart-Installation)[https://github.com/SentinelDataHub/DataHubSystem/wiki/Smart-Installation].
+To learn how to launch a *DHuS*  application please refer to the online guide (https://github.com/SentinelDataHub/DataHubSystem/wiki/Smart-Installation)[https://github.com/SentinelDataHub/DataHubSystem/wiki/Smart-Installation].
 Assuming that the *DHuS* address is ```http://localhost:8081```, we will setup OWC instance to point the *DHUS* server, with this simple steps:
 
 Open the file ```owc-app.html```:
@@ -351,7 +355,7 @@ vim app/elements/hello-owc/hello-owc.html
 Add the ```<template>``` tag after the ```<dom-module id="hello-owc">``` node, with the view code:
 ```
 <template>
- <button on-click="goHandler">GO<button>
+ <button on-click="goHandler">GO</button>
 <template>
 ```
 
@@ -382,7 +386,7 @@ In the ```_init()``` method replace the line ```var helloOwc = document.createEl
 **9) Run the application:**
 
 ```
-gulp serve:dist
+  gulp serve:dist
 ```
 
 
