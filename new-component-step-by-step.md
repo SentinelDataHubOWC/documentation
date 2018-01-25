@@ -163,7 +163,7 @@ In our component the *Model* is represented by the
 
 **CONTROLLER**  
 
-The controller contains the business logic of component. The main goal of the *Controller* is to create the binding of the *Model* with the *View*, to provide the model from the *datasources* and to manage the behaviour of model. It represents the logic-layer between the user and the datasources.
+The controller contains the business logic of component. The main goal of the *Controller* is to establish the binding of the *Model* with the *View*, to provide the model from the *datasources* and to manage the behaviour of model. It represents the logic-layer between the user and the datasources.
 
 
 
