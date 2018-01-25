@@ -145,7 +145,7 @@ The development environment is ready to use at this point.
 
 
 # OWC component anatomy
-OWC components are Polymer elements, it follows the structure proposed by *Polymer Authors*.
+An OWC component is a Polymer elements, the architecture of an owc component follows the structure proposed by *Polymer Authors*.
 OWC component implements the [*Model View Controller*](https://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93controller) (MVC) design pattern.  The view consists of HTML markup where is possible to bind the value of UI elements with application variable. The Controller is written in JS, it contains the business logic of the component using [EcmaScript6](https://github.com/lukehoban/es6features).
 The model of component is contained in the property section of component.
 
