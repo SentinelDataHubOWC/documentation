@@ -173,7 +173,7 @@ The controller contains the business logic of component. The main goal of the *C
 
 # Enjoy coding
 
-The last step is to write down the implementation code of your new component. Many open source examples are present on the web, for the sake of completeness we advice to read some code from official Polymer community compoments [https://github.com/PolymerElements](https://github.com/PolymerElements).
+We are ready to write down the code of our new component. Many open source examples are present on the web, for the sake of completeness we advice to read some code from official Polymer community compoments [https://github.com/PolymerElements](https://github.com/PolymerElements).
 
 We try now to create a *hello world* new component from scratch with a button with label "GO" that shows an alert with messsage "Hello OWC".
 Presuming the development environment ready, the developer has to follow these simple steps:
