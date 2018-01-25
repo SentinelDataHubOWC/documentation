@@ -243,7 +243,7 @@ Add the ```<template>``` tag after the ```<dom-module id="hello-owc">``` node, w
 ```
 <template>
  <button on-click="goHandler">GO</button>
-<template>
+</template>
 ```
 
 Add the go event handler in the *Controller* after the method  *beforeRegister()*:
