@@ -268,7 +268,7 @@ Open the file ```owc-app.html```
 vim app/elements/owc-app/owc-app.html
 ```
 
-In the ```_init()``` method replace the line ```var helloOwc = document.createElement('dynamic-main-menu');``` with ```var dynamicMenu = document.createElement('hello-owc');``` and the line ```self.navigationManager.pushComponent(dynamicMenu, "150px", (self.theme.title) ? self.theme.title : '', true, true, 1);``` with the line ``` self.navigationManager.pushComponent(helloOwc, "150px", "Hello OWC", true, true, 1); ```
+In the ```_init()``` method replace the line ```var dynamicMenu  = document.createElement('dynamic-main-menu');``` with ```var helloOwc = document.createElement('hello-owc');``` and the line ```self.navigationManager.pushComponent(dynamicMenu, "150px", (self.theme.title) ? self.theme.title : '', true, true, 1);``` with the line ``` self.navigationManager.pushComponent(helloOwc, "150px", "Hello OWC", true, true, 1); ```
 
 **9) Run the application:**
 
