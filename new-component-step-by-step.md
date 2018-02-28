@@ -334,3 +334,6 @@ http://localhost:8081/elements/new-component/
 
 # Summary
 OWC is based on the most modern web technologies. The developer interested to create a new component has to setup the development environment, to run the creator script and to develop the code following the javascript best practices.
+
+
+![workflow](./img/workflow.svg)
